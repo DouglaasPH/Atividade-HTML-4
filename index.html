@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atividade HTML 4</title>
+  </head>
+  <body>
+    <h1>Formulário com áudio e vídeo</h1>
+    <section>
+      <h2>Áudio</h2>
+
+      <audio controls>
+        <source src="/audio/music.mp3" type="audio/mpeg" />
+
+        Seu navegador não suporta o elemento de áudio.
+      </audio>
+    </section>
+
+    <section>
+      <h2>Vídeo</h2>
+
+      <video width="640" height="360" controls>
+        <source src="/video/video.mp4" type="video/mp4" />
+
+        Seu navegador não suporta o elemento de vídeo.
+      </video>
+    </section>
+
+    <section>
+      <h2>Conte-nos um pouco sobre você!</h2>
+
+      <form action="" autocomplete="on" method="post" name="login">
+        <label for="fnome">Nome</label> <br />
+        <input type="text" name="fnome" id="fnome" value="nome da pessoa" />
+        <br />
+
+        <label for="fsobrenome">Sobrenome</label> <br />
+        <input
+          type="text"
+          name="fsobrenome"
+          id="fsobrenome"
+          value="sobrenome da pessoa"
+        />
+        <br />
+
+        <label for="fdependente">Quantidade de dependentes</label> <br />
+        <input
+          type="number"
+          name="fdependente"
+          id="fdependente"
+          value="quantidade de dependentes"
+        />
+        <br />
+
+        <label for="fmensagem">Mensagem</label> <br />
+        <textarea name="fmensagem" id="fmensagem" rows="3" cols="20"></textarea>
+        <br />
+
+        <button type="submit" form="login">Enviar</button>
+      </form>
+    </section>
+  </body>
+</html>
